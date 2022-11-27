@@ -23,7 +23,6 @@ favoriteRouter
     Favorite.findOne({ user: req.user._id })
       .then((favorite) => {
         if (favorite) {
-          git;
           req.body.forEach((fav) => {
             if (!favorite.campsites.includes(fav._id)) {
               favorite.campsites.push(fav._id);
