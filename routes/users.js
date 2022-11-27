@@ -8,6 +8,7 @@ const cors = require("./cors");
 /* GET users listing. */
 router.get(
   "/",
+
   cors.corsWithOptions,
   authenticate.verifyUser,
   authenticate.verifyAdmin,

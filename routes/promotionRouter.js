@@ -16,6 +16,7 @@ promotionRouter
       })
       .catch((err) => next(err));
   })
+
   .post(
     cors.corsWithOptions,
     authenticate.verifyUser,
